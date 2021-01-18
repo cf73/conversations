@@ -1,0 +1,67 @@
+h5 {
+  font-family: Roboto;
+  font-size: 16px; }
+
+.caption {
+  font-family: Roboto;
+  font-size: 13px; }
+
+body {
+  overflow: hidden; }
+
+.hold-all {
+  display: flex;
+  flex-direction: row; }
+
+#mainNav {
+  background-color: #2E3B40;
+  height: 100vh;
+  width: 55px;
+  top: 0;
+  left: 0;
+  float: left; }
+
+#sidebar {
+  background-color: #EFF3F5;
+  width: 230px;
+  height: 100vh; }
+
+#conversation-list {
+  width: 366px;
+  height: calc(100vh - 24px);
+  padding: 0 15px; }
+
+.collection-card {
+  width: 100%;
+  height: 77px;
+  margin-bottom: 3px;
+  background-color: lightblue;
+  border-radius: 15px 15px 15px 0;
+  padding: 10px; }
+
+.active {
+  background-color: #1B71CE;
+  color: white; }
+
+#conversation {
+  width: 480px;
+  height: calc(100vh - 48px);
+  border-radius: 30px;
+  margin-top: 24px;
+  margin-right: 15px;
+  overflow: hidden;
+  border: 1px solid #D6E0E6;
+  box-shadow: 0px 2px 5px #D6E0E6; }
+
+#conversation-header {
+  height: 73px;
+  width: 100%;
+  background-color: #FBFBFB;
+  border-bottom: solid thin #D6E0E6; }
+
+#insights {
+  width: 255px;
+  height: 100vh;
+  background-color: gainsboro; }
+
+/*# sourceMappingURL=conversations.css.map */

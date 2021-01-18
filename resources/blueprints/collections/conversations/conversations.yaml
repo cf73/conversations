@@ -1,0 +1,225 @@
+title: Conversations
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: date
+        field:
+          mode: single
+          time_enabled: false
+          time_required: false
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Date
+          type: date
+          icon: date
+          listable: hidden
+      -
+        handle: time
+        field:
+          display: Time
+          type: time
+          icon: time
+          listable: hidden
+      -
+        handle: excerpt
+        field:
+          input_type: text
+          antlers: false
+          display: Excerpt
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: escalated
+        field:
+          display: Escalated
+          type: toggle
+          icon: toggle
+          listable: hidden
+      -
+        handle: needs_attention
+        field:
+          display: 'Needs Attention'
+          type: toggle
+          icon: toggle
+          listable: hidden
+      -
+        handle: activity
+        field:
+          collapse: false
+          sets:
+            activity_item:
+              display: 'Activity Item'
+              fields:
+                -
+                  handle: activity_summary
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: 'Activity Summary'
+                    type: text
+                    icon: text
+                    listable: hidden
+                -
+                  handle: escalation
+                  field:
+                    display: Escalation
+                    type: toggle
+                    icon: toggle
+                    listable: hidden
+                -
+                  handle: flag
+                  field:
+                    display: Flag
+                    type: toggle
+                    icon: toggle
+                    listable: hidden
+                -
+                  handle: date
+                  field:
+                    mode: single
+                    time_enabled: true
+                    time_required: true
+                    earliest_date: '1900-01-01'
+                    full_width: false
+                    inline: false
+                    columns: 1
+                    rows: 1
+                    display: Date
+                    type: date
+                    icon: date
+                    listable: hidden
+          display: Activity
+          type: replicator
+          icon: replicator
+          listable: hidden
+      -
+        handle: engagement
+        field:
+          display: Engagement
+          type: integer
+          icon: integer
+          listable: hidden
+      -
+        handle: campaigns
+        field:
+          display: Campaigns
+          type: integer
+          icon: integer
+          listable: hidden
+      -
+        handle: chats_per_week
+        field:
+          display: 'Chats per week'
+          type: integer
+          icon: integer
+          listable: hidden
+      -
+        handle: live_chats
+        field:
+          display: 'Live chats'
+          type: integer
+          icon: integer
+          listable: hidden
+      -
+        handle: crm_id
+        field:
+          input_type: text
+          antlers: false
+          display: 'CRM ID'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: date_added
+        field:
+          mode: single
+          time_enabled: false
+          time_required: false
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: 'Date Added'
+          type: date
+          icon: date
+          listable: hidden
+      -
+        handle: test_user
+        field:
+          display: 'Test User'
+          type: toggle
+          icon: toggle
+          listable: hidden
+      -
+        handle: user_message_1
+        field:
+          antlers: false
+          display: 'User message 1'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: user_message_2
+        field:
+          antlers: false
+          display: 'User message 2'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: user_message_3
+        field:
+          antlers: false
+          display: 'User message 3'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: bot_message_1
+        field:
+          antlers: false
+          display: 'Bot message 1'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: bot_message_2
+        field:
+          antlers: false
+          display: 'Bot message 2'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: bot_message_3
+        field:
+          antlers: false
+          display: 'Bot message 3'
+          type: textarea
+          icon: textarea
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
